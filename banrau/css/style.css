@@ -1,0 +1,252 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  border: 1px solid #333;
+  height: auto;
+  width: 90%;
+  margin: 0 auto;
+}
+.wrapper_chitiet {
+  height: auto;
+  width: 90%;
+  margin: 0 auto;
+}
+.hinhanh_sanpham {
+  float: left;
+  width: 50%;
+}
+.chitiet_sanpham {
+  float: left;
+  width: 50%;
+}
+input.themgiohang {
+  border: none;
+  background: #e6f788;
+  color: black;
+  padding: 12px;
+  font-size: 15px;
+  cursor: pointer; /*ban tay tro vao*/
+  border-radius: 10px;
+}
+.header {
+  background-image: url(../img/bannershop.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 180px;
+  border: 1px solid #c22ea9;
+  height: 180px;
+  width: 100%;
+}
+.menu {
+  border: 1px solid #333;
+  height: 50px;
+  width: 100%;
+  background: #c0c0c0;
+}
+ul.list_menu {
+  padding: 0;
+  margin: 0;
+  width: 60%;
+  /*border: 1px solid #333;*/
+  list-style: none;
+  line-height: 27px;
+  margin: 0 auto;
+}
+ul.list_menu li {
+  float: left;
+  margin: 7px;
+  padding: 5px;
+}
+ul.list_menu li:hover {
+  background: wheat;
+}
+ul.list_menu li a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+#main {
+  border: 1px solid #1e1ca0;
+  height: auto;
+  width: 100%;
+}
+
+.sidebar {
+  border: 1px solid #c7c5c5;
+  height: 390px;
+  width: 20%;
+  margin-top: 5px;
+  margin-left: 5px;
+  float: left;
+}
+
+ul.list_sidebar {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+
+  list-style: none;
+  line-height: 27px;
+}
+ul.list_sidebar li {
+  margin: 7px;
+  padding: 5px;
+}
+ul.list_sidebar li:hover {
+  background: rgb(142, 215, 228);
+}
+ul.list_sidebar li a {
+  text-align: left;
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+.maincontent {
+  /*border: 1px solid #ff0000;*/
+  height: auto;
+  width: 78%;
+  margin-top: 5px;
+  margin-left: 5px;
+  float: right;
+}
+
+p.title_product {
+  text-align: center;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+}
+p.price_product {
+  text-align: center;
+  color: #ff0000;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+ul.product_list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+}
+ul.product_list li {
+  width: 23%;
+  border: 1px solid #c7c5c5;
+  margin: 5px;
+  float: left;
+  /*background: #d9eaeb;*/
+  height: 300px;
+}
+ul.product_list li a {
+  text-decoration: none;
+}
+
+ul.product_list li img {
+  /*width: 90%;*/
+  height: 190px;
+}
+/*
+.footer {
+  border: 1px solid #636060;
+  height: 150px; 
+  width: 100%;
+  background: #c0c0c0;
+} */
+.container {
+  max-width: 1170px;
+
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer {
+  background-color: #c0c0c0;
+  padding: 30px 0;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 40px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: black;
+  text-transform: capitalize; /*in đậm đầu mỗi từ: Thông Tin */
+  margin-bottom: 30px;
+}
+.footer-col ul li p {
+  text-align: justify;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  text-decoration: none;
+}
+.footer-col ul li a:hover {
+  color: #c22ea9;
+  padding-left: 8px;
+}
+.footer-col .social a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgb(43, 42, 41);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+/*
+p.footer_copyright {
+  text-align: center;
+  color: #333;
+} */
+.clear {
+  clear: both;
+}
+
+/* Tabs */
+.tabs {
+  width: 600px;
+  background-color: #c0c0c0;
+  border-radius: 5px 5px 5px 5px;
+}
+ul#tabs-nav {
+  list-style: none;
+  margin: 0;
+  padding: 5px;
+  overflow: auto;
+}
+ul#tabs-nav li {
+  float: left;
+  font-weight: bold;
+  margin-right: 2px;
+  padding: 8px 10px;
+  border-radius: 5px 5px 5px 5px;
+  /*border: 1px solid #d5d5de;
+  border-bottom: none;*/
+  cursor: pointer;
+}
+ul#tabs-nav li:hover,
+ul#tabs-nav li.active {
+  background-color: white;
+}
+#tabs-nav li a {
+  text-decoration: none;
+  color: black;
+}
+.tab-content {
+  padding: 10px;
+  border: 5px solid #c0c0c0;
+  background-color: #fff;
+}

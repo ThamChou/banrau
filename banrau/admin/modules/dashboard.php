@@ -1,0 +1,1 @@
+<p>Welcome to dashboard (Trang chu)</p>
