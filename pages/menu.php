@@ -6,7 +6,7 @@ $query_danhmuc = mysqli_query($mysqli, $sql_danhmuc);
 
 ?>
 <?php
-if (isset($_GET['dangxuat']) && $_GET['dangxuat'] == 1) {
+if (isset($_GET['dangxuat']) && $_GET['dangxuat'] == 1) { //line 29
     unset($_SESSION['dangky']);
 }
 ?>

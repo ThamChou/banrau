@@ -5,15 +5,19 @@ include('../../admin/config/config.php');
 if (isset($_GET['cong'])) {
     $id = $_GET['cong'];
     foreach ($_SESSION['cart'] as $cart_item) {
-        if ($cart_item['id'] != $id) {
+        if ($cart_item['id'] != $id) { //kt trong gio hang có id sp đó chưa
             $product[] = array(
                 'tensanpham' => $cart_item['tensanpham'], 'id' => $cart_item['id'], 'soluong' => $cart_item['soluong'],
                 'giasp' => $cart_item['giasp'], 'hinhanh' => $cart_item['hinhanh'], 'masp' => $cart_item['masp']
-            );
+            ); //thêm sp mới
             $_SESSION['cart'] = $product;
         } else {
             $tangsoluong = $cart_item['soluong'] + 1;
-            if ($cart_item['soluong'] <= 9) {
+            $sql_gio = "SELECT * FROM tbl_sanpham WHERE id_sanpham=" . $id; //lấy ra các trường trong bảng sp
+            $query_gio = mysqli_query($mysqli, $sql_gio);
+            $row = mysqli_fetch_array($query_gio);
+            $soluong1 = $row['soluong'];
+            if ($cart_item['soluong'] < $soluong1) {
 
                 $product[] = array(
                     'tensanpham' => $cart_item['tensanpham'], 'id' => $cart_item['id'], 'soluong' => $tangsoluong,
