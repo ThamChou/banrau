@@ -45,7 +45,7 @@
                     <!--
                     <li><a href="#">About us</a></li>
                     -->
-                    <p>Thương hiệu thời trang của người trẻ hiện đại! Ra đời vào năm 2016, LOFISTYLE luôn nỗ lực với sứ mệnh tạo nên xu hướng thời trang mang đến sự tin tưởng và năng lượng tích cực cho khách hàng.</p>
+                    <p>Cửa hàng Rau củ chúng tôi ra đời năm 2018, luôn nỗ lực mang đến sự tin tưởng, uy tín và thực phẩm tươi sạch cho khách hàng.</p>
 
                 </ul>
             </div>

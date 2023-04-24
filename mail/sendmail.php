@@ -26,7 +26,7 @@ class Mailer
             $mail->Username = 'thamc1502@gmail.com';                 // SMTP username, thực hiện việc gửi mail
             $mail->Password = 'jjgxtskvzvhhjjsn';                           // SMTP password
             $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted, cổng tls
-            $mail->Port = 587;                                    // TCP port to connect to
+            $mail->Port = 587;                                    // TCP port to connect to "tls: 587, ssl: 465"
 
             //Recipients
             $mail->setFrom('thamc1502@gmail.com', 'Mailer');
@@ -49,9 +49,9 @@ class Mailer
             //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
             $mail->send();
-            echo 'Message has been sent';
+            echo 'Đã gửi mail xong';
         } catch (Exception $e) {
-            echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo; //mail gửi ko thành công
+            echo 'Mail không thể gửi đi. Lỗi: ', $mail->ErrorInfo; //mail gửi ko thành công
         }
     }
 }

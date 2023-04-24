@@ -17,7 +17,7 @@ if (isset($_GET['dangxuat']) && $_GET['dangxuat'] == 1) {
         while ($row_danhmuc = mysqli_fetch_array($query_danhmuc)) {
         ?>
             <li><a href="index.php?quanly=danhmucsanpham&id=<?php echo $row_danhmuc['id_danhmuc'] ?>"><?php echo $row_danhmuc['tendanhmuc'] ?></a></li>
-        <?php
+        <?php //mỗi danh mục hiển thị dựa trên id danh mục
         }
         ?>
 
@@ -42,7 +42,7 @@ if (isset($_GET['dangxuat']) && $_GET['dangxuat'] == 1) {
     </ul>
     <p>
     <form action="index.php?quanly=timkiem" method="POST">
-        <input type="text" placeholder="Tìm kiếm sản phẩm..." name="tukhoa">
+        <input type="text" placeholder="Tìm kiếm sản phẩm..." name="tukhoa" autocomplete="off">
         <input type="submit" name="timkiem" value="Tìm">
 
     </form>

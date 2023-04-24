@@ -15,7 +15,7 @@ $query_pro = mysqli_query($mysqli, $sql_pro);
                 <img src="admin/modules/quanlysp/uploads/<?php echo $row['hinhanh'] ?>">
                 <p class="title_product"> <?php echo $row['tensanpham'] ?> </p>
                 <p class="price_product">Giá: <?php echo number_format($row['giasp'], 0, ',', '.') . 'vnd' . '/kg'  ?></p>
-                <p style="text-align: center;color:#c7c5c5"><?php echo $row['tendanhmuc'] ?></p>
+                <p style="text-align: center;color:#c7c5c5"><?php echo $row['tendanhmuc'] ?></p> <!--tên danh mục màu trắng phía dưới sp-->
             </a>
 
         </li>

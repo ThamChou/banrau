@@ -11,7 +11,7 @@ if (isset($_POST['dangnhap'])) {
     if ($count > 0) {
         $row_data = mysqli_fetch_array($row);
         $_SESSION['dangky'] = $row_data['tenkhachhang'];
-        $_SESSION['dangky'] = $row_data['email'];
+        $_SESSION['email'] = $row_data['email'];
         $_SESSION['id_khachhang'] = $row_data['id_dangky'];
         header('location:index.php?quanly=giohang');
     } else {

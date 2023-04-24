@@ -15,8 +15,8 @@ if ($cart_query) {
         $insert_order_chitiet = "INSERT INTO tbl_cart_chitiet(id_sanpham,code_cart,soluongmua) VALUE('" . $id_sanpham . "','" . $code_order . "','" . $soluong . "')";
         mysqli_query($mysqli, $insert_order_chitiet);
     }
-    $tieude = "Dat hang website rau cu sach thanh cong!";
-    $noidung = "<p>Cam on quy khach da dat hang cua chung toi voi ma don hang: " . $code_order . "</p>";
+    $tieude = "Đặt hàng tại website bán rau củ thành công!";
+    $noidung = "<p>Cảm ơn quý khách đã đặt hàng tại website bán rau củ với mã đơn hàng: " . $code_order . ", vui lòng chuẩn bị tiền để nhận hàng</p>";
     $maildathang = $_SESSION['email'];
     $mail = new Mailer();
     $mail->dathangmail($tieude, $noidung, $maildathang);

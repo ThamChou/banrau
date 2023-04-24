@@ -11,7 +11,7 @@ if (isset($_POST['dangky'])) {
     if ($sql_dangky) {
         echo '<p style="color:red">Bạn đã đăng ký thành công</p>';
         $_SESSION['dangky'] = $tenkhachhang;
-        $_SESSION['dangky'] = $email;
+        $_SESSION['email'] = $email;
         $_SESSION['id_khachhang'] = mysqli_insert_id($mysqli);
 
         header('Location:index.php?quanly=giohang');
@@ -73,7 +73,7 @@ if (isset($_POST['dangky'])) {
             <td align="center">
                 <input type="submit" name="dangky" value="Đăng ký" />
             </td>
-            <td><a href="index.php?quanly=dangnhap">Đăng nhập nếu có tài khoản</a></td>
+            <td><a href="index.php?quanly=dangnhap" style="text-decoration: none;">Đăng nhập nếu có tài khoản</a></td>
 
         </tr>
 

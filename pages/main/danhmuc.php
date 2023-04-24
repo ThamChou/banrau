@@ -1,10 +1,10 @@
 <?php
 
-$sql_pro = "SELECT * FROM tbl_sanpham WHERE tbl_sanpham.id_danhmuc='$_GET[id]' ORDER BY id_sanpham DESC";
+$sql_pro = "SELECT * FROM tbl_sanpham WHERE tbl_sanpham.id_danhmuc='$_GET[id]' ORDER BY id_sanpham DESC"; //sắp xếp theo sp, cái nào thêm trc vào trc
 $query_pro = mysqli_query($mysqli, $sql_pro);
 
 //get ten danhmuc
-$sql_cate = "SELECT * FROM tbl_danhmuc WHERE tbl_danhmuc.id_danhmuc='$_GET[id]' LIMIT 1";
+$sql_cate = "SELECT * FROM tbl_danhmuc WHERE tbl_danhmuc.id_danhmuc='$_GET[id]' LIMIT 1"; //lấy ra 1 dữ liệu
 $query_cate = mysqli_query($mysqli, $sql_cate);
 $row_title = mysqli_fetch_array($query_cate);
 

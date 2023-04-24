@@ -9,7 +9,7 @@
 </p>
 
 <?php
-if (isset($_SESSION['cart'])) {
+if (isset($_SESSION['cart'])) { //tồn tại sess cart
 }
 ?>
 <table style="width:100%; text-align:center;">
